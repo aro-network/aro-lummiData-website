@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LumiiData | Illuminating web data for AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Funnel+Display:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary-fixed": "#5e5e5e",
+                "tertiary-fixed-dim": "#474747",
+                "on-secondary": "#ffffff",
+                "inverse-surface": "#303030",
+                "on-tertiary-container": "#ffffff",
+                "surface-container": "#eeeeee",
+                "surface-container-low": "#f3f3f3",
+                "secondary-fixed-dim": "#ababab",
+                "on-background": "#1b1b1b",
+                "inverse-primary": "#c6c6c6",
+                "on-surface": "#1b1b1b",
+                "background": "#f9f9f9",
+                "surface-container-highest": "#e2e2e2",
+                "outline": "#777777",
+                "on-secondary-fixed-variant": "#3b3b3b",
+                "secondary-container": "#d4d4d4",
+                "on-tertiary-fixed-variant": "#e2e2e2",
+                "secondary-fixed": "#c6c6c6",
+                "surface-bright": "#f9f9f9",
+                "outline-variant": "#c6c6c6",
+                "primary-container": "#3b3b3b",
+                "tertiary": "#3b3b3b",
+                "surface-dim": "#dadada",
+                "on-primary": "#e2e2e2",
+                "error": "#ba1a1a",
+                "on-primary-fixed-variant": "#e2e2e2",
+                "on-primary-container": "#ffffff",
+                "on-primary-fixed": "#ffffff",
+                "surface": "#f9f9f9",
+                "tertiary-fixed": "#5e5e5e",
+                "on-tertiary-fixed": "#ffffff",
+                "primary-fixed-dim": "#474747",
+                "surface-variant": "#e2e2e2",
+                "on-secondary-container": "#1b1b1b",
+                "on-error": "#ffffff",
+                "on-secondary-fixed": "#1b1b1b",
+                "on-surface-variant": "#474747",
+                "inverse-on-surface": "#f1f1f1",
+                "primary": "#000000",
+                "surface-tint": "#5e5e5e",
+                "tertiary-container": "#747474",
+                "error-container": "#ffdad6",
+                "on-error-container": "#410002",
+                "on-tertiary": "#e2e2e2",
+                "secondary": "#5e5e5e",
+                "surface-container-high": "#e8e8e8",
+                "surface-container-lowest": "#ffffff"
+              },
+              fontFamily: {
+                "headline": ["Space Grotesk"],
+                "body": ["Inter"],
+                "label": ["Plus Jakarta Sans"],
+                "action": ["Funnel Display"]
+              },
+              borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .mono-line-bg {
+            background-image: repeating-linear-gradient(0deg, #000 0px, #000 1px, transparent 1px, transparent 40px),
+                              repeating-linear-gradient(90deg, #000 0px, #000 1px, transparent 1px, transparent 40px);
+            opacity: 0.03;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<nav class="bg-[#f9f9f9] dark:bg-black text-black dark:text-white docked full-width top-0 z-50 sticky border-b-2 border-black dark:border-white">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-[1440px] mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-black dark:text-white uppercase font-['Space_Grotesk']">
+                LumiiData
+            </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-black dark:text-white font-bold border-b-2 border-black dark:border-white pb-1 font-body" href="#">Products</a>
+<a class="text-black/60 dark:text-white/60 font-medium hover:text-black dark:hover:text-white transition-colors duration-200 font-body" href="#">Pricing</a>
+<a class="text-black/60 dark:text-white/60 font-medium hover:text-black dark:hover:text-white transition-colors duration-200 font-body" href="#">Sign In</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 font-['Funnel_Display'] font-bold hover:bg-surface-tint transition-all active:scale-95">
+                Start Free Trial
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex flex-col md:flex-row items-center overflow-hidden">
+<div class="w-full md:w-[70%] px-8 md:px-16 py-20 z-10">
+<h1 class="font-headline text-6xl md:text-8xl font-bold tracking-tighter leading-none mb-8">
+                Illuminating web data for AI.
+            </h1>
+<p class="font-body text-xl md:text-2xl max-w-2xl text-primary-fixed leading-relaxed mb-12">
+<span class="text-primary font-bold">Autonomous Workflows.</span> Everything You Need to Power AI with Web Data.
+            </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-primary text-on-primary px-10 py-5 text-xl font-action font-bold uppercase tracking-wider hover:bg-surface-tint transition-all">
+                    Start Free Trial
+                </button>
+<button class="border-2 border-primary text-primary px-10 py-5 text-xl font-action font-bold uppercase tracking-wider hover:bg-surface-container transition-all">
+                    See How It Works
+                </button>
+</div>
+</div>
+<!-- Abstract Geometric Motif -->
+<div class="hidden md:flex w-[30%] h-full absolute right-0 top-0 border-l-2 border-black bg-surface-container flex-col justify-center items-center overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="w-full h-full" style="background-image: radial-gradient(circle at 2px 2px, black 1px, transparent 0); background-size: 24px 24px;"></div>
+</div>
+<div class="relative w-full h-full flex items-center justify-center">
+<div class="w-full h-[1px] bg-black absolute top-1/4 rotate-12"></div>
+<div class="w-full h-[1px] bg-black absolute top-1/2 -rotate-12"></div>
+<div class="w-full h-[1px] bg-black absolute top-3/4 rotate-45"></div>
+<div class="w-full h-[4px] bg-black absolute top-1/3"></div>
+<div class="w-[4px] h-full bg-black absolute left-1/4"></div>
+<div class="w-[1px] h-full bg-black absolute left-1/2 rotate-6"></div>
+<div class="w-64 h-64 border-4 border-black rotate-45 flex items-center justify-center">
+<div class="w-32 h-32 bg-black"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Bar -->
+<section class="bg-black text-white py-12 px-8 md:px-16 border-y-2 border-black">
+<div class="max-w-[1440px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col">
+<span class="font-headline text-4xl font-bold">72M+</span>
+<span class="font-body text-sm uppercase tracking-widest text-secondary-fixed">Residential IPs</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline text-4xl font-bold">99.9%</span>
+<span class="font-body text-sm uppercase tracking-widest text-secondary-fixed">Network Uptime</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline text-4xl font-bold">15k+</span>
+<span class="font-body text-sm uppercase tracking-widest text-secondary-fixed">Active Enterprises</span>
+</div>
+<div class="flex items-center gap-4 grayscale opacity-60">
+<span class="material-symbols-outlined text-4xl">verified_user</span>
+<span class="font-body text-xs font-bold uppercase">SOC2 Type II Certified</span>
+</div>
+</div>
+</section>
+<!-- Screen 2: Data Stack -->
+<section class="py-24 px-8 md:px-16 max-w-[1440px] mx-auto">
+<div class="mb-16">
+<h2 class="font-headline text-5xl md:text-6xl font-bold tracking-tighter uppercase">Complete Web Data Stack for AI.</h2>
+<div class="w-32 h-2 bg-black mt-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-black border-2 border-black">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-12 group hover:bg-black hover:text-white transition-all duration-300">
+<div class="flex justify-between items-start mb-8">
+<span class="font-headline text-2xl font-bold">01</span>
+<span class="material-symbols-outlined text-4xl">lan</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-4">First-Party Proxies</h3>
+<p class="font-body text-lg leading-relaxed opacity-70">Ethically sourced, high-speed residential and datacenter proxies with zero-latency delivery for enterprise AI training.</p>
+<a class="inline-block mt-8 font-action font-bold uppercase underline underline-offset-8 decoration-2" href="#">Learn More</a>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-12 group hover:bg-black hover:text-white transition-all duration-300">
+<div class="flex justify-between items-start mb-8">
+<span class="font-headline text-2xl font-bold">02</span>
+<span class="material-symbols-outlined text-4xl">shield_person</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-4">Block-Resistant Scraping</h3>
+<p class="font-body text-lg leading-relaxed opacity-70">Advanced fingerprinting bypass and automated CAPTCHA solving to ensure your scrapers never hit a wall.</p>
+<a class="inline-block mt-8 font-action font-bold uppercase underline underline-offset-8 decoration-2" href="#">Technical Specs</a>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-12 group hover:bg-black hover:text-white transition-all duration-300">
+<div class="flex justify-between items-start mb-8">
+<span class="font-headline text-2xl font-bold">03</span>
+<span class="material-symbols-outlined text-4xl">search_insights</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-4">SERP APIs</h3>
+<p class="font-body text-lg leading-relaxed opacity-70">Structured search engine data across all major providers with localized accuracy and real-time refresh rates.</p>
+<a class="inline-block mt-8 font-action font-bold uppercase underline underline-offset-8 decoration-2" href="#">View Endpoints</a>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-12 group hover:bg-black hover:text-white transition-all duration-300">
+<div class="flex justify-between items-start mb-8">
+<span class="font-headline text-2xl font-bold">04</span>
+<span class="material-symbols-outlined text-4xl">account_tree</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-4">Autonomous Workflows</h3>
+<p class="font-body text-lg leading-relaxed opacity-70">Low-code automation for end-to-end data pipelines. From ingestion to cleaning, ready for LLM consumption.</p>
+<a class="inline-block mt-8 font-action font-bold uppercase underline underline-offset-8 decoration-2" href="#">Explore Logic</a>
+</div>
+</div>
+</section>
+<!-- Screen 3: Why LumiiData -->
+<section class="bg-surface-container py-24 px-8 md:px-16">
+<div class="max-w-[1440px] mx-auto">
+<h2 class="font-headline text-5xl md:text-6xl font-bold tracking-tighter mb-16 uppercase">Why LumiiData.</h2>
+<div class="space-y-0">
+<!-- Row 1 -->
+<div class="grid grid-cols-1 md:grid-cols-12 items-center py-12 border-t-2 border-black group cursor-default">
+<div class="md:col-span-4 mb-4 md:mb-0">
+<div class="text-6xl font-headline font-bold">72M+</div>
+<div class="text-sm uppercase tracking-widest font-bold">Global IPs</div>
+</div>
+<div class="md:col-span-6 font-body text-xl text-primary-fixed group-hover:text-black transition-colors">
+                        Access the world's most robust first-party proxy network with precise geo-targeting down to the city level.
+                    </div>
+<div class="md:col-span-2 text-right hidden md:block">
+<span class="material-symbols-outlined text-4xl">public</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="grid grid-cols-1 md:grid-cols-12 items-center py-12 border-t-2 border-black group cursor-default">
+<div class="md:col-span-4 mb-4 md:mb-0">
+<div class="text-6xl font-headline font-bold">99.9%</div>
+<div class="text-sm uppercase tracking-widest font-bold">Uptime</div>
+</div>
+<div class="md:col-span-6 font-body text-xl text-primary-fixed group-hover:text-black transition-colors">
+                        Architected for mission-critical AI applications. Our infrastructure scales automatically to handle any request volume.
+                    </div>
+<div class="md:col-span-2 text-right hidden md:block">
+<span class="material-symbols-outlined text-4xl">bolt</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="grid grid-cols-1 md:grid-cols-12 items-center py-12 border-t-2 border-black group cursor-default">
+<div class="md:col-span-4 mb-4 md:mb-0">
+<div class="text-6xl font-headline font-bold">40-60%</div>
+<div class="text-sm uppercase tracking-widest font-bold">Cost Advantage</div>
+</div>
+<div class="md:col-span-6 font-body text-xl text-primary-fixed group-hover:text-black transition-colors">
+                        By owning our infrastructure end-to-end, we bypass reseller markups and pass the efficiency directly to your bottom line.
+                    </div>
+<div class="md:col-span-2 text-right hidden md:block">
+<span class="material-symbols-outlined text-4xl">payments</span>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="grid grid-cols-1 md:grid-cols-12 items-center py-12 border-t-2 border-b-2 border-black group cursor-default">
+<div class="md:col-span-4 mb-4 md:mb-0">
+<div class="text-6xl font-headline font-bold text-black">Unified</div>
+<div class="text-sm uppercase tracking-widest font-bold">Workflow</div>
+</div>
+<div class="md:col-span-6 font-body text-xl text-primary-fixed group-hover:text-black transition-colors">
+                        One API for everything. Stop managing multiple vendors and disparate datasets. Streamline your AI supply chain.
+                    </div>
+<div class="md:col-span-2 text-right hidden md:block">
+<span class="material-symbols-outlined text-4xl">all_inclusive</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Screen 5: Final CTA -->
+<section class="py-32 px-8 md:px-16 bg-surface relative overflow-hidden">
+<div class="mono-line-bg absolute inset-0"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter mb-12 uppercase leading-tight">
+                Everything You Need to Power AI with Web Data.
+            </h2>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-primary text-on-primary px-12 py-6 text-xl font-action font-bold uppercase hover:bg-surface-tint transition-all">
+                    Explore Proxies Pricing
+                </button>
+<button class="border-2 border-primary text-primary px-12 py-6 text-xl font-action font-bold uppercase hover:bg-surface-container transition-all">
+                    View Product Details
+                </button>
+</div>
+<div class="mt-16 grayscale opacity-40 flex flex-wrap justify-center gap-12">
+<img alt="Partner Logo" class="h-6 object-contain" data-alt="minimalist silhouette of a global technology brand logo in monochrome grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC82E-p8oGpB6_iCnXAMQNtzaH_TO6p_4182XyQsYVhoWuEUsy6K1hLofLOPfJrtGC7L653UsUhRTxPjUOWF4K9CYEBH-r810-I9HaCVpYS-4RkHqSzsadG4gOXEv9TBLWDYHWwOGIhslK4F_cvfIj3Co-9wY7UjQO8gFqBiuCH8RIltq9TQnlDeiwBRT5JY3voD-a5HjDrTOfLgjOXH6B3f94tRNhjQwpBMCl8FN_5iKFWrm5g5GFn131zIb1zDOlQbFWwrK7GR1Y"/>
+<img alt="Partner Logo" class="h-6 object-contain" data-alt="minimalist silhouette of a global AI research lab logo in monochrome grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMigsn_lt2kxd4wzgVbC2mNA3_TXQAwT_XrYrz912WkEu-0rq2i9C_NWZYnCBCHtc31mW0En56kGov3OMqGmMb_Dxx5XT1WxgaxdiHpSioFNrD68R-FDy9oXhsR0YHBNzOFLE5P7gJ2g2Y95AddextBBKgD9RSrHFYyCS9ovUImfP0AltAnyFn82g0DaEGJ9gQ9ZqATulCLuO8H5CxMoqeHd8IvPEyZtvsQsSlmCWpZ3AzoS-dZOmsh5da-wVz5VgAqWnGbDTZ7NA"/>
+<img alt="Partner Logo" class="h-6 object-contain" data-alt="minimalist silhouette of a high-tech infrastructure company logo in monochrome grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm1Ap1saH4CKbPTERlEgB6_n9lbnPizkytk9vsAFTRqp0P671bV78PcdoH8vq9OaF_Fu-KFyHxESIMQG8XYlfNxbahLkVknsi5hnqmhxZ7CK5iH6IbII6VhFQffoneLKnajAIyFhkn7p5jHatgaw8WxOelAJtNLkmwhcgIpkwuMDogJyIXDQ-wrMHnBWHfba_CbmqIGBntSnnbJa1wpDpMFtitfE_dS5vuDpkK0PMxvIwwDYHDXxL7lukgt51Q8HBEO0hS9beQFZM"/>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-black text-white py-16 px-16 w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-[1440px] mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-3xl font-black tracking-tighter text-white uppercase mb-6 font-headline">LumiiData</div>
+<p class="text-white/60 font-body text-sm leading-relaxed">
+                    The premium standard for AI-ready web data infrastructure. Architected for performance, precision, and compliance.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline font-bold uppercase mb-6 text-white">Solutions</h4>
+<div class="flex flex-col gap-4">
+<a class="text-white/70 hover:text-white transition-opacity font-body text-sm" href="#">First-Party Proxies</a>
+<a class="text-white/70 hover:text-white transition-opacity font-body text-sm" href="#">Block-Resistant Scraping</a>
+<a class="text-white/70 hover:text-white transition-opacity font-body text-sm" href="#">SERP APIs</a>
+<a class="text-white/70 hover:text-white transition-opacity font-body text-sm" href="#">Autonomous Workflows</a>
+</div>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline font-bold uppercase mb-6 text-white">Company</h4>
+<div class="flex flex-col gap-4">
+<a class="text-white/70 hover:text-white transition-opacity font-body text-sm" href="#">Pricing</a>
+<a class="text-white/70 hover:text-white transition-opacity font-body text-sm" href="#">Compliance</a>
+<a class="text-white/70 hover:text-white transition-opacity font-body text-sm" href="#">Transparency</a>
+</div>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline font-bold uppercase mb-6 text-white">Network</h4>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 bg-green-500 rounded-full"></span>
+<span class="text-white font-body text-sm">All Systems Operational</span>
+</div>
+<p class="text-white/60 font-body text-sm italic">"Precision at Scale."</p>
+</div>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-white/10 max-w-[1440px] mx-auto text-white/50 font-body text-xs text-center">
+            © 2024 LumiiData. All rights reserved. Architected for performance.
+        </div>
+</footer>
+</body></html>
